@@ -6,6 +6,8 @@ Calling dynamic link libraries via [Koffi](https://koffi.dev/).
 
 [NI-VISA API Reference](https://www.ni.com/docs/en-US/bundle/ni-visa-api-ref/page/ni-visa-api-ref/ni-visa-api-ref.html)
 
+Free commercial use, welcome to contribute.
+
 ## Installation
 
 ### Install NI-VISA runtime

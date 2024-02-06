@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
-import { nodePolyfills } from 'vite-plugin-node-polyfills'
+// import commonjsExternals from 'vite-plugin-commonjs-externals'
 
 export default defineConfig({
   build: {
@@ -10,11 +10,9 @@ export default defineConfig({
       fileName: 'ni-visa'
     },
     rollupOptions: {
-      external: ['koffi'],
-      output: {
-        globals: { koffi: 'koffi' }
-      }
+      external: ['koffi', /^node:.+/],
+      output: { globals: (moduleName) => moduleName }
     }
   },
-  plugins: [nodePolyfills(), dts({ include: './lib/*.ts', rollupTypes: true })]
+  plugins: [dts({ include: './lib/*.ts', rollupTypes: true })]
 })

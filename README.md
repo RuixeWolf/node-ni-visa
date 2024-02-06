@@ -14,7 +14,7 @@ Free commercial use, welcome to contribute.
 
 [Download](https://www.ni.com/en/support/downloads/drivers/download.ni-visa.html) and install NI-VISA runtime library.
 
-### Install [node-ni-visa]()
+### Install [node-ni-visa](https://www.npmjs.com/package/node-ni-visa)
 
 ```shell
 # NPM

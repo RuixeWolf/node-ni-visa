@@ -1,0 +1,14 @@
+{
+  "watch": [
+    "lib/**/*.*",
+    "src/**/*.*"
+  ],
+  "ignore": [
+    "node_modules/**/node_modules",
+    "tests/**/*.*",
+    "*/**/*.md"
+  ],
+  "execMap": {
+    "ts": "tsx"
+  }
+}
